@@ -1,17 +1,19 @@
 module.exports = class humano {
     static instance;
     nombre;
-    constructor({nombre}){
-        this.nombre = nombre
-    }
-    static set Setinstance(arg){
+    
+    static get getInstance(){
         if(typeof humano.instance === "object"){
             return humano.instance
         }
-        humano.instance = new humano(arg)
+        humano.instance = new humano()
+        return this
     }
-    saludar(){
-        return "Hola Mundo"
+    set setNombre(nombre){
+        this.nombre = nombre
+    }
+    get getNombre(){
+        return this.nombre;
     }
     destructor(){
         humano.instance = undefined;

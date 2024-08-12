@@ -6,12 +6,8 @@ const saludar = require("./module")
 //cuando se utiliza los modules commonjs todo se convierte en sincrono
 //lo asincrono son promesas
 
-async function main(){
-    humano.instance = {nombre: "santiago"}
-    console.log(humano.instance.nombre)
-    humano.instance.destructor()
-    humano.Setinstance = {nombre: "Paula"}
-    //se vuelve a instanciar
-}
-
-main()
+humano.getInstance;
+humano.instance.nombre = "Santiago"
+console.log(humano.instance.getNombre);
+humano.instance.nombre = "Paula"
+console.log(humano.instance.getNombre)
