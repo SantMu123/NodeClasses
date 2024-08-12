@@ -1,0 +1,12 @@
+{
+  "name": "modulenode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type":"commonjs",
+  "scripts": {
+    "dev": "node --watch server/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
